@@ -11,7 +11,7 @@ echo "The node version is "
 npm -v
 
 cd ~/ && unzip cocktails_app.zip
-cd cocktails && npm i ----only=prod
+cd cocktails && npm i --only=prod
 
 sudo cp /tmp/cocktails.service /etc/systemd/system/cocktails.service
 sudo systemctl start cocktails.service
